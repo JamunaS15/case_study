@@ -1,0 +1,25 @@
+spring.jpa.database=default
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.datasource.jdbc-url=jdbc:mysql://localhost:3306/reader
+spring.datasource.username=root
+spring.datasource.password=Root123
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+db.datasource.jdbc-url=jdbc:mysql://localhost:3306/books
+db.datasource.username=root
+db.datasource.password=Root123
+db.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=jamunasuresh15@gmail.com
+spring.mail.password=nhpd sfdt rulp jnvu
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+jwt.secret=_|\/\/+.53c|23t
+
+server.port=3333
+spring.application.name=reader
+eureka.client.serviceUrl.defaultZone= http://localhost:2369/eureka

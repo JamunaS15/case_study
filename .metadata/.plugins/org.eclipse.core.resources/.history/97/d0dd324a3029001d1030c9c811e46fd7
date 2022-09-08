@@ -1,0 +1,36 @@
+package com.digitalbooks.reader.bookDb.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.digitalbooks.reader.bookDb.entity.BookList;
+@Repository
+public interface BooklistRepository extends JpaRepository<BookList, Integer>{
+	List<BookList> findByBlocked(boolean blocked);
+	
+	@Query(nativeQuery = true, value = "select * from book_list b where b.rating > :rating")
+	List<BookList> findByRating(double rating);
+	
+	@Query(value = "select * from book_list b where b.book_title like %:bookTitle%", nativeQuery = true)
+	List<BookList> findByBookTitle(String bookTitle);
+	
+	@Query(nativeQuery = true, value = "select * from book_list b where b.price between :low and :high")
+	List<BookList> findByPrice(int low, int high);
+	
+	@Query(nativeQuery = true, value = "select * from book_list b where b.rating > :rating and b.book_title like %:bookTitle%")
+	List<BookList> findByRatingAndBookTitle(double rating, String bookTitle);
+	
+	@Query(nativeQuery = true, value = "select * from book_list b where b.rating > :rating and b.price between :low and :high")
+	List<BookList> findByRatingAndPrice(double rating, int low, int high);
+	
+	@Query(nativeQuery = true, value = "select * from book_list b where b.book_title like %:bookTitle% and b.price between :low and :high")
+	List<BookList> findByBookTitleAndPrice(String bookTitle, int low, int high);
+	
+	@Query(nativeQuery = true, value = "select * from book_list b where b.rating > :rating and b.price between :low and :high and b.book_title like %:bookTitle%")
+	List<BookList> findByRatingAndPriceAndBookTitle(double rating, int low, int high, String bookTitle);
+	
+	
+}
