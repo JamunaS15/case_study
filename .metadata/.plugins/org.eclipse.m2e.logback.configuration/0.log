@@ -4232,3 +4232,22 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.webjars:s
 2022-09-07 18:29:30,461 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-09-07 18:29:30,461 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-09-07 18:29:30,461 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\case_study\author\src\test\resources
+2022-09-08 17:47:58,021 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-08 17:51:22,481 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 17:51:22,493 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 17:51:22,503 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-08 17:51:22,545 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-08 17:51:22,554 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 17:51:22,554 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 17:51:22,555 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\case_study\eureka-server\src\test\resources
+2022-09-08 17:58:39,319 [Worker-5: Launching eureka-server-build] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\case_study\eureka-server
+2022-09-08 17:58:39,321 [Worker-5: Launching eureka-server-build] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B mvn clean package
+2022-09-08 18:00:57,425 [Worker-3: Launching eureka-server-build] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\case_study\eureka-server
+2022-09-08 18:00:57,425 [Worker-3: Launching eureka-server-build] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B mvn clean install
+2022-09-08 18:05:06,103 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 18:05:06,103 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 18:05:06,140 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-08 18:05:06,178 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-08 18:05:06,185 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 18:05:06,185 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 18:05:06,186 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\case_study\eureka-server\src\test\resources
