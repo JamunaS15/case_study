@@ -65,7 +65,7 @@ public class AuthorController {
 	@GetMapping("/blockBook/{authorId}/{bookId}")
 	public ResponseEntity<?> blockBook(@PathVariable int authorId, @PathVariable int bookId){
 		AuthorBookDetails book = authorBookService.authorBlockBook(bookId, authorId);
-		kafkaTemplate.send("blocked-book", bookId);
+		//kafkaTemplate.send("blocked-book", bookId);
 		Map<String,String> response = new HashMap<>();
 		//response.put("details",res);
 		return ResponseEntity.ok(book);

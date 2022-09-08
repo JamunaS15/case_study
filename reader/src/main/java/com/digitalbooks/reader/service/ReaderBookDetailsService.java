@@ -119,11 +119,11 @@ public class ReaderBookDetailsService {
 		return listBooks;
 	}
 	
-	@KafkaListener(
-			topics = "blocked-book", 
-			groupId="group_id", 
-			containerFactory = "userKafkaListenerFactory"
-		)
+//	@KafkaListener(
+//			topics = "blocked-book", 
+//			groupId="group_id", 
+//			containerFactory = "userKafkaListenerFactory"
+//		)
 	public void blockedMailMessage(int bookId) {
 		System.out.println(" kafka book id "+bookId);
 		List<SubscribeBook> list = subscribeRepo.findByBookId(bookId);
