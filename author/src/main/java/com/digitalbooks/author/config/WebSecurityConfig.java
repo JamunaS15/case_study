@@ -71,6 +71,7 @@ public class WebSecurityConfig {
 				// dont authenticate this particular request
 				.authorizeRequests()
 					.antMatchers("/api/v1/digitalbooks/author/authenticate").permitAll().antMatchers("/swagger-ui/**").permitAll()
+					.antMatchers("/h2-console/**").permitAll()
 					.antMatchers(HttpMethod.POST, "/api/v1/digitalbooks/author/signup").permitAll()
 //					.antMatchers("/all/**").access("hasAnyRole('MANAGER','ADMIN')")
 				// all other requests need to be authenticated

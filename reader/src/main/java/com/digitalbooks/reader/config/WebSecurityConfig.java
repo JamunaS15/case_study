@@ -65,6 +65,7 @@ public class WebSecurityConfig {
 				// dont authenticate this particular request
 				.authorizeRequests()
 					.antMatchers("/api/v1/digitalbooks/**").permitAll()
+					.antMatchers("/**").permitAll()
 					.antMatchers(HttpMethod.POST, "/api/v1/digitalbooks/reader/signup").permitAll()
 //					.antMatchers("/all/**").access("hasAnyRole('MANAGER','ADMIN')")
 					.antMatchers("/movies/director/**").access("hasRole('DIRECTOR')")
